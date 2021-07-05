@@ -1,0 +1,38 @@
+footer{
+	color: #fff;
+	font-weight: 300;
+	padding: 32px 0 28px;
+	background-color: #07272D;
+}
+
+footer .infos{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 28px;
+}
+
+footer .infos > div{
+	width: 25%;
+}
+
+footer .social-links{
+	display: none;
+}
+
+footer .logo img{
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+.copy{
+	color: #fff;
+	font-weight: 300;
+	padding: 8px 0 4px;
+	background-color: #07272D;
+	border-top: 1px solid #fff;
+}
+
+.copy p{
+	margin: 0;
+}

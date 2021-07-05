@@ -1,0 +1,192 @@
+/* Partes da cobrança */
+	section#partes-cobranca{
+		margin: 28px 0;
+		padding-top: 72px;
+		min-height: 650px;
+		height: 90%;
+	}
+
+	section#partes-cobranca .menu{
+		display: flex;
+		margin-top: 42px;
+		justify-content: center;
+	}
+
+	section#partes-cobranca .menu .menu__link{
+		font-size: 1.1em;
+		font-weight: 500;
+		border-bottom:  1px solid rgba(200, 200, 200, .2);
+	}
+
+	.menu--alonso .menu__item:nth-child(1) a,
+	.menu--alonso .menu__item:nth-child(7) a{
+		font-weight: 600 !important;
+	}
+
+	section#partes-cobranca .content{
+		display: none;
+		justify-content: space-around;
+	}
+
+	section#partes-cobranca .content .description{
+		width: 60%;
+	}
+
+	section#partes-cobranca .content .tools{
+		width: 30%;
+		text-align: center;
+	}
+
+	section#partes-cobranca .content .tools img{
+		width: 160px;
+	}
+
+	section#partes-cobranca .content.show-up{
+		display: flex;
+	}
+
+/* Institucional */
+	section#institucional{
+		margin: 22px 0 62px;
+	}
+
+	section#institucional .container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 82px;
+	}
+
+	section#institucional .container h2{
+		text-align: left;
+	}
+
+	section#institucional .container h2 span{
+		color: #00C65E;
+	}
+
+/* Depoimentos */
+	section#depoimentos{
+		color: #fff;
+		padding: 42px 0;
+		background-color: #07272D;
+	}
+
+	section#depoimentos .slick .item{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		column-gap: 182px;
+	}
+
+	section#depoimentos .slick .item .description{
+		width: 45%;
+		font-weight: 300;
+	}
+
+	section#depoimentos .slick .item .description figure{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	section#depoimentos .slick .item .description figure img{
+		width: 100px;
+	}
+
+	section#depoimentos .slick .item .description figure p{
+		margin: 6px 0 0;
+		line-height: 1.2;
+		font-size: .95em;
+	}
+
+	section#depoimentos .slick .item .company{
+		position: relative;
+	}
+
+	section#depoimentos .slick .item .company .fachada{
+		width: 500px;
+		display: block;
+	}
+
+	section#depoimentos .slick .item .company span{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 10px 16px;
+		font-size: .8em;
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
+	}
+
+/* Benefícios */
+	section#beneficios{
+		padding: 62px 0;
+	}
+
+	section#beneficios .item{
+		display: flex;
+		margin: 44px 0;
+		justify-content: center;
+		align-items: center;
+		column-gap: 44px;
+	}
+
+	section#beneficios .item:nth-child(even){
+		text-align: right;
+	}
+
+	section#beneficios .item .description{
+		width: 40%;
+	}
+
+	section#beneficios .item .description p{
+		margin: 0;
+	}
+
+	section#beneficios .item .box{
+		width: 40%;
+		height: 140px;
+		background-color: #00C65E;
+	}
+
+/* Treinamento */
+	section#treinamento{
+		color: #eee;
+		padding: 120px 0 140px;
+		text-align: center;
+		background-color: #003118;
+	}
+
+	section#treinamento .container{
+		width: 900px;
+	}
+
+	section#treinamento h2{
+		color: #00C65E;
+		font-size: 2em;
+	}
+
+	section#treinamento .miniaturas img{
+		width: 120px;
+		height: 100px;
+		margin: 10px;
+		display: inline-block;
+		background-color: #222;
+		border: 1px solid #ddd;
+	}
+
+/* app */
+
+/* cta-final */
+	section#cta-final{
+		height: 100%;
+		min-height: 550px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
