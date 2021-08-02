@@ -51,15 +51,15 @@ header .features .container{
 }
 
 header .features .container .item{
-    height: 104px;
+    height: 125px;
     position: relative;
     display: flex;
 }
 
 header .features .container .item:nth-child(1){ width: 300px; }
-header .features .container .item:nth-child(2){ width: 280px; }
+header .features .container .item:nth-child(2){ width: 360px; }
 header .features .container .item:nth-child(3){ width: 340px; }
-header .features .container .item:nth-child(4){ width: 340px; }
+header .features .container .item:nth-child(4){ width: 300px; }
 header .features .container .item:nth-child(5){ width: 340px; }
 
 header .features .container .item img{

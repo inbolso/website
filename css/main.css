@@ -81,6 +81,23 @@ strong{
     margin: 0 auto;
 }
 
+.tag{
+    color: #fff;
+    font-style: normal;
+    font-size: .7em;
+    column-gap: 4px;
+    padding: 3px 6px;
+    border-radius: 12px;
+    display: inline-flex;
+    opacity: .6;
+    background-color: #2842BF;
+}
+
+.tag img{
+  height: 16px;
+  display: none;
+}
+
 @media (min-width: 768px) {
     .container{
         width: 720px;
