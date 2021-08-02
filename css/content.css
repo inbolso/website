@@ -24,12 +24,11 @@
 
 	section#aleatory-1 .container div h2 span{
 		color: #00c65e;
-	}
-	
+	}	
 
 /* Products */
 	section#products{
-		margin: 22px 0 62px;
+		margin: 122px 0 62px;
 	}
 
 	section#products .content{
@@ -176,17 +175,19 @@
 	}
 
 	section#saas-protesto .content .parte-2{
-		width: 80%;
+		/*width: 80%;*/
 		margin: 12px auto;
 	}
 
 	section#saas-protesto .content .parte-2 h2{
 		color: #00c65e;
+		text-align: left;
+		margin-top: 64px;
 	}
 
 	section#saas-protesto .content .parte-2 .cta-box{
 		width: 100%;
-		margin: 20px 0;
+		margin: 40px 0 0;
 		text-align: center;
 	}
 
