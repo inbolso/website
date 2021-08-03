@@ -238,23 +238,106 @@
 		column-gap: 20px;
 	}
 
-	section#depoimentos .author img{
-		width: 68px;
-		height: 68px;
+	section#depoimentos .author .perfil{
+		width: 66px;
+		height: 66px;
 		border-radius: 50%;
-		border: 5px solid #fff;
+		border: 3px solid #fff;
+		background-size: cover;
+		box-shadow: inset 0 0 0 3px #07272D;
+		background-position: center center;
 	}
 
 	section#depoimentos .author span{
 		font-weight: 600;
 	}
 
+	section#depoimentos .author p{
+		margin: 0;
+	}
+
+/* Credores */
+	section#credores{
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	section#credores .items{
+		display: flex;
+		padding: 20px 0;
+		column-gap: 20px;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	section#credores .items .item{
+		display: flex;
+		column-gap: 20px;
+		align-items: center;
+	}
+
+	section#credores .items .item img{
+		max-width: 140px;
+		max-height: 80px;
+	}
+
 /* cta-final */
 	section#cta-final{
-		height: 100%;
+		height: 90%;
 		min-height: 550px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+
+/* prods-final */
+	section#prods-final{
+		padding: 60px 0;
+	}
+
+	section#prods-final h3{
+		color: #00c65e;
+		font-size: 2em;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	section#prods-final .product-list{
+		display: flex;
+		column-gap: 10px;
+		justify-content: space-between;
+	    align-items: flex-start;
+	}
+
+	section#prods-final .product-list .prod{
+	    height: 225px;
+	    position: relative;
+	}
+
+	section#prods-final .product-list .prod:nth-child(1){ width: 180px; }
+	section#prods-final .product-list .prod:nth-child(2){ width: 190px; }
+	section#prods-final .product-list .prod:nth-child(3){ width: 200px; }
+	section#prods-final .product-list .prod:nth-child(4){ width: 200px; }
+	section#prods-final .product-list .prod:nth-child(5){ width: 200px; }
+
+	section#prods-final .product-list .prod img{
+		width: 64px;
+		height: 64px;
+		margin-bottom: 6px;
+	}
+
+	section#prods-final .product-list .prod span{
+		font-weight: 600;
+	}
+
+	section#prods-final .product-list .prod p{
+		margin: 0;
+		font-size: .9em;
+	}
+
+	section#prods-final .product-list .prod a{
+		color: #00c65e;
+		position: absolute;
+		bottom: 0;
 	}

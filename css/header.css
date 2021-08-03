@@ -5,7 +5,9 @@ header{
 	align-items: center;
 	position: relative;
 	margin-bottom: 100px;
-	background-color: rgb(242,247,244);
+	background: rgb(242,247,244) url('../imgs/header_bg.jpg') no-repeat;
+	background-position: 85% center;
+	background-size: contain;
 }
 
 header .content{
