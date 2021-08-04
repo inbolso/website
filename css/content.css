@@ -32,7 +32,6 @@
 	}
 
 	section#products .content{
-		width: 70%;
 		margin: 0 auto;
 	}
 
@@ -68,6 +67,12 @@
 		line-height: 1.5;
 	}
 
+	@media (min-width: 1200px) {
+		section#products .content{
+			width: 70%;
+		}	
+	}
+
 /* Plataforma de Cobranca */
 	section#plataforma-cobranca{
 		margin: 22px 0 62px;
@@ -93,8 +98,13 @@
 		column-gap: 60px;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: column;
 	}
 	
+	section#plataforma-cobranca .winthor{
+		text-align: center;
+	}
+
 	section#plataforma-cobranca .winthor img{
 		width: 420px;
 		height: auto;
@@ -110,6 +120,7 @@
 
 	section#plataforma-cobranca .winthor div{
 		margin: 6px 0;
+		text-align: left;
 	}
 
 	section#plataforma-cobranca .features-list{
@@ -147,6 +158,16 @@
 		text-align: center;
 	}
 
+	@media (min-width: 992px) {
+		section#plataforma-cobranca .title{
+			width: 86%;
+		}
+
+		section#plataforma-cobranca .content{
+			flex-direction: row;
+		}
+	}
+
 /* Saas Protesto  */
 	section#saas-protesto{
 		margin: 22px 0 62px;
@@ -160,17 +181,14 @@
 
 	section#saas-protesto .content .parte-1{
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		column-gap: 32px;
 	}
 
 	section#saas-protesto .content .parte-1 .img-desc{
-		width: 30%;
-	}
-
-	section#saas-protesto .content .parte-1 .description{
-		width: 70%;
+		text-align: center;
 	}
 
 	section#saas-protesto .content .parte-1 .description h2{
@@ -180,6 +198,7 @@
 	}
 
 	section#saas-protesto .content .parte-1 .description .features-list{
+		margin-top: 12px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -187,7 +206,14 @@
 
 	section#saas-protesto .content .parte-1 .description .features-list .feature{
 		width: 40%;
+		display: flex;
 		margin: 4px 0;
+	}
+
+	section#saas-protesto .content .parte-1 .description .features-list .feature img{ 
+		width: 20px;
+		height: 20px;
+		margin: 6px;
 	}
 
 	section#saas-protesto .content .parte-1 .description .features-list .feature span{
@@ -213,6 +239,23 @@
 		text-align: center;
 	}
 
+
+	@media (min-width: 992px) {
+		section#saas-protesto .content .parte-1 .description{
+			width: 85%;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		section#saas-protesto .content .parte-1{
+			flex-direction: row;
+		}
+
+		section#saas-protesto .content .parte-1 .description{
+			width: 70%;
+		}
+	}
+
 /* Depoimentos */
 	section#depoimentos{
 		color: #fff;
@@ -226,9 +269,7 @@
 	}
 
 	section#depoimentos .depo{
-		width: 600px;
-		margin: 20px 0;
-		font-size: 1.3em;
+		padding: 20px;
 	}
 
 	section#depoimentos .author{
@@ -256,6 +297,14 @@
 		margin: 0;
 	}
 
+	@media (min-width: 768px) {
+		section#depoimentos .depo{
+			width: 600px;
+			padding: 20px 0;
+			font-size: 1.3em;
+		}
+	}
+
 /* Credores */
 	section#credores{
 		padding: 80px 0;
@@ -272,8 +321,9 @@
 
 	section#credores .items .item{
 		display: flex;
-		column-gap: 20px;
+		row-gap: 20px;
 		align-items: center;
+		flex-direction: column;
 	}
 
 	section#credores .items .item img{
@@ -281,14 +331,32 @@
 		max-height: 80px;
 	}
 
+	@media (min-width: 992px) {
+		section#credores .items .item{
+			row-gap: 0px;
+			column-gap: 20px;
+			flex-direction: row;
+		}
+	}
+
 /* cta-final */
 	section#cta-final{
-		height: 90%;
+		height: 100%;
 		min-height: 550px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+
+	section#cta-final br{
+		display: none;
+	}
+
+	@media (min-width: 992px) {
+		section#cta-final br{
+			display: block;
+		}
 	}
 
 /* prods-final */
@@ -311,7 +379,7 @@
 	}
 
 	section#prods-final .product-list .prod{
-	    height: 225px;
+	    height: 295px;
 	    position: relative;
 	}
 
@@ -340,4 +408,16 @@
 		color: #00c65e;
 		position: absolute;
 		bottom: 0;
+	}
+
+	@media (min-width: 992px) {
+		section#prods-final .product-list .prod{
+			height: 245px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		section#prods-final .product-list .prod{
+			height: 225px;
+		}
 	}

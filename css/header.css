@@ -6,7 +6,7 @@ header{
 	position: relative;
 	margin-bottom: 100px;
 	background: rgb(242,247,244) url('http://www.inbolso.com.br/imgs/header_bg.jpg') no-repeat;
-	background-position: 85% center;
+	background-position: 500px center;
 	background-size: contain;
 }
 
@@ -17,15 +17,16 @@ header .content{
 }
 
 header .content > *{
-	width: 50%;
+	width: 60%;
 }
 
 header .content p{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 header .content .slide-img{
 	text-align: center;
+	width: 40%;
 }
 
 header .content .slide-img img{
@@ -38,7 +39,7 @@ header .content .cta{
 
 header .features{
 	position: absolute;
-	top: 95%;
+	top: 90%;
 	left: 0;
 	right: 0;
 	color: #fff;
@@ -50,24 +51,27 @@ header .features .container{
 	display: flex;
 	justify-content: space-between;
     align-items: flex-start;
+    column-gap: 12px;
 }
 
 header .features .container .item{
-    height: 125px;
+    height: 195px;
     position: relative;
     display: flex;
+   	flex-direction: column;
 }
 
-header .features .container .item:nth-child(1){ width: 300px; }
-header .features .container .item:nth-child(2){ width: 360px; }
-header .features .container .item:nth-child(3){ width: 340px; }
-header .features .container .item:nth-child(4){ width: 300px; }
-header .features .container .item:nth-child(5){ width: 340px; }
+header .features .container .item:nth-child(1){ width: 20%; }
+header .features .container .item:nth-child(2){ width: 18%; }
+header .features .container .item:nth-child(3){ width: 22%; }
+header .features .container .item:nth-child(4){ width: 19%; }
+header .features .container .item:nth-child(5){ width: 20%; }
 
 header .features .container .item img{
 	width: 28px;
 	height: 28px;
 	margin-right: 6px;
+	margin-bottom: 6px;
 }
 
 header .features .container .item span{
@@ -83,4 +87,47 @@ header .features .container .item a{
 	color: #00c65e;
 	position: absolute;
 	bottom: 0;
+}
+
+@media (min-width: 992px) {
+	header{
+		background-position: 400px center;
+	}
+	
+	header .content p{
+		font-size: 1.1em;
+	}
+
+	header .features{
+		top: 95%;
+	}
+
+	header .features .container{
+		column-gap: 0;
+	}
+	
+	header .features .container .item{
+    	height: 145px;
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 1200px) {
+	header{
+		background-position: 90% center;
+	}
+
+	header .content > *{
+		width: 50%;
+	}
+
+	header .features .container .item{
+		height: 125px;
+	}
+
+	header .features .container .item:nth-child(1){ width: 20%; }
+	header .features .container .item:nth-child(2){ width: 20%; }
+	header .features .container .item:nth-child(3){ width: 22%; }
+	header .features .container .item:nth-child(4){ width: 18%; }
+	header .features .container .item:nth-child(5){ width: 20%; }
 }

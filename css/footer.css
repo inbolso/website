@@ -1,18 +1,16 @@
 footer{
 	color: #fff;
 	font-weight: 300;
-	padding: 32px 0 28px;
+	padding: 28px 20px 28px;
 	background-color: #07272D;
 }
 
 footer .infos{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	column-gap: 28px;
-}
-
-footer .infos > div{
-	width: 25%;
+	flex-direction: column;
+	row-gap: 12px;
 }
 
 footer .social-links{
@@ -35,4 +33,31 @@ footer .logo img{
 
 .copy p{
 	margin: 0;
+}
+
+@media (min-width: 768px) {
+	footer{
+		padding: 32px 0 28px;
+	}
+
+	footer .infos{
+		row-gap: 0;
+		column-gap: 4%;
+		flex-direction: row;
+	}
+	
+	footer .infos > div{
+		width: 48%;
+	}
+}
+
+@media (min-width: 992px) {
+	footer .infos{
+		column-gap: 1%;
+	}
+
+	footer .infos > div{
+		width: 24%;
+	}
+
 }
