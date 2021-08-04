@@ -1,0 +1,50 @@
+.bg-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10000;
+	display: none;
+}
+
+.opened{
+	display: flex;
+}
+
+.modal{
+	width: 800px;
+	height: 600px;
+	max-height: 90%;
+	padding: 24px;
+	border-radius: 12px;
+	background-color: #fff;
+	position: relative;
+}
+
+.modal .close-modal{
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 24px;
+	font-size: .8em;
+	font-weight: 500;
+	padding: 6px 12px;
+	border-radius: 12px;
+	border: 1px solid #00c65e;
+	transition: .1s ease-in all;
+}
+
+.modal .close-modal:hover{
+	color: #fff;
+	background-color: #00c65e;
+}
+
+.modal iframe *{
+    font-family: 'Epilogue', sans-serif !important;
+}
