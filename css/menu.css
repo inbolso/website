@@ -19,6 +19,10 @@ nav .logo-home img{
 	width: 120px;
 }
 
+nav ul{
+	display: none;
+}
+
 nav ul li{
 	margin: 0 16px;
 	display: inline-block;
@@ -27,4 +31,10 @@ nav ul li{
 nav ul li a{
 	color: inherit;
 	display: inline-block;
+}
+
+@media (min-width: 768px) {
+	nav ul{
+		display: block;
+	}
 }
