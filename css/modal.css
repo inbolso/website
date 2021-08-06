@@ -17,10 +17,10 @@
 }
 
 .modal{
-	width: 800px;
-	height: 600px;
+	width: 96%;
+	height: 96%;
 	max-height: 90%;
-	padding: 24px;
+	padding: 56px 24px 24px;
 	border-radius: 12px;
 	background-color: #fff;
 	position: relative;
@@ -47,4 +47,12 @@
 
 .modal iframe *{
     font-family: 'Epilogue', sans-serif !important;
+}
+
+@media (min-width: 768px) {
+	.modal{
+		width: 800px;
+		height: 600px;
+		padding: 24px;
+	}
 }
